@@ -1,0 +1,150 @@
+
+
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f5f5;
+}
+
+/* TOPO */
+
+header {
+    background-color: rgb(48, 179, 66);
+    color: white;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0px 3px 10px rgba(0,0,0,0.2);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 55px;
+}
+
+/* GIF */
+
+.gif-topo {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.gif-topo img {
+    width: 95%;
+    max-width: 1400px;
+    border-radius: 15px;
+}
+
+/* MANCHETE */
+
+.manchete {
+    width: 90%;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.manchete h2 {
+    font-size: 65px;
+    color: rgb(0, 0, 0);
+    margin-bottom: 20px;
+    line-height: 1.1;
+}
+
+.manchete h3 {
+    font-size: 36px;
+    color: #444;
+    font-weight: normal;
+    width: 90%;
+    line-height: 1.5;
+}
+
+/* CONTEÚDO */
+
+.conteudo {
+    display: flex;
+    gap: 40px;
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+    align-items: flex-start;
+}
+
+/* IMAGEM */
+
+.imagem-noticia img {
+    width: 600px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+}
+
+/* TEXTO */
+
+.texto-noticia {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+}
+
+.texto-noticia p {
+    font-size: 22px;
+    line-height: 1.9;
+    color: #222;
+}
+
+/* CITAÇÃO */
+
+blockquote {
+    font-size: 28px;
+    color: rgb(48, 179, 66);
+    border-left: 6px solid rgb(48, 179, 66);
+    padding-left: 20px;
+    margin-left: 0;
+    font-style: italic;
+}
+
+/* NOVA SEÇÃO */
+
+.extra-noticia {
+    width: 90%;
+    margin: auto;
+    margin-top: 60px;
+    background-color: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+}
+
+.extra-noticia h2 {
+    color: rgb(48, 179, 66);
+    font-size: 45px;
+    margin-top: 40px;
+}
+
+.extra-noticia p {
+    font-size: 22px;
+    line-height: 1.9;
+    color: #222;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 900px) {
+
+    .conteudo {
+        flex-direction: column;
+    }
+
+    .imagem-noticia img {
+        width: 100%;
+    }
+
+    .manchete h2 {
+        font-size: 50px;
+    }
+
+    .manchete h3 {
+        font-size: 28px;
+    }
+
+}
